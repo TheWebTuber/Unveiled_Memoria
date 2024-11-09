@@ -271,7 +271,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(550px);
+      translateZ(50px);
   }
 
   .banner .slider .item img {
@@ -323,29 +323,28 @@
     z-index: 5;
   }
 
-  @keyframes autoRun {
-    from {
-      transform: perspective(1000px) rotateX(-5deg) rotateY(0deg) rotateZ(0deg);
-    }
-    to {
-      transform: perspective(1000px) rotateX(-5deg) rotateY(360deg)
-        rotateZ(0deg);
-    }
-  }
-
   .banner .sliderb .itemb {
     position: absolute;
     inset: 0 0 0 0;
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(450px);
+      translateZ(350px);
   }
 
   .banner .sliderb .itemb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(100px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+      transform: perspective(100px) rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
+    }
   }
 
   img {
