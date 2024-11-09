@@ -102,19 +102,6 @@
     text-shadow: 0 10px 20px #ff0000;
   }
 
-  .banner .content .model {
-    background-image: url(images/bg.png);
-    width: 100%;
-    height: 550px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 1;
-  }
-
   .banner .content .author {
     color: #fff;
     padding: 20px;
@@ -128,6 +115,43 @@
 
   .banner .content h1 {
     font-size: 5em;
+  }
+
+  .banner .sliderb {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 5;
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(1000px) rotateX(-5deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+      transform: perspective(1000px) rotateX(-5deg) rotateY(360deg)
+        rotateZ(0deg);
+    }
+  }
+
+  .banner .sliderb .itemb {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(450px);
+  }
+
+  .banner .sliderb .itemb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   img {
@@ -241,15 +265,6 @@
     z-index: 2;
   }
 
-  @keyframes autoRun {
-    from {
-      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-    }
-    to {
-      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-    }
-  }
-
   .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
@@ -281,19 +296,6 @@
     text-shadow: 0 10px 20px #c00000; /* Change shadow color */
   }
 
-  .banner .content .model {
-    background-image: url(images/bg.png);
-    width: 100%;
-    height: 550px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 1;
-  }
-
   .banner .content .author {
     color: #000;
     padding: 20px;
@@ -307,6 +309,43 @@
 
   .banner .content h1 {
     font-size: 5em;
+  }
+
+  .banner .sliderb {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 5;
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(1000px) rotateX(-5deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+      transform: perspective(1000px) rotateX(-5deg) rotateY(360deg)
+        rotateZ(0deg);
+    }
+  }
+
+  .banner .sliderb .itemb {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(450px);
+  }
+
+  .banner .sliderb .itemb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   img {
