@@ -64,7 +64,7 @@
     animation: autoRun 20s linear infinite;
     z-index: 2;
   }
-  
+
   .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
@@ -127,7 +127,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(500px);
+      translateZ(600px);
   }
 
   .banner .sliderb .itemb img {
@@ -180,11 +180,10 @@
 
   @keyframes autoRun {
     from {
-      transform: perspective(1000px) rotateX(-5deg) rotateY(0deg) rotateZ(0deg);
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     to {
-      transform: perspective(1000px) rotateX(-5deg) rotateY(360deg)
-        rotateZ(0deg);
+      transform: perspective(1000px) rotateX(360deg) rotateY(540deg) rotateZ(100080deg);
     }
   }
 }
