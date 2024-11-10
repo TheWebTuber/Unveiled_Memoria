@@ -71,7 +71,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(550px);
+      translateZ(485px);
   }
   .banner .slider .item img {
     width: 100%;
@@ -164,7 +164,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(470px);
+      translateZ(460px);
   }
 
   .banner .sliderc .itemc img {
@@ -191,7 +191,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(490px);
+      translateZ(465px);
   }
 
   .banner .sliderd .itemd img {
@@ -218,7 +218,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(510px);
+      translateZ(470px);
   }
 
   .banner .slidere .iteme img {
@@ -245,7 +245,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(530px);
+      translateZ(475px);
   }
 
   .banner .sliderf .itemf img {
@@ -272,7 +272,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(545px);
+      translateZ(480px);
   }
 
   .banner .sliderg .itemg img {
