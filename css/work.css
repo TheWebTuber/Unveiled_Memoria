@@ -64,15 +64,7 @@
     animation: autoRun 20s linear infinite;
     z-index: 2;
   }
-  @keyframes autoRun {
-    from {
-      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-    }
-    to {
-      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-    }
-  }
-
+  
   .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
@@ -172,10 +164,64 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
-      translateZ(500px);
+      translateZ(470px);
   }
 
   .banner .sliderc .itemc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner .sliderd {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 7;
+  }
+
+  .banner .sliderd .itemd {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(490px);
+  }
+
+  .banner .sliderd .itemd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner .slidere {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 9;
+  }
+
+  .banner .slidere .iteme {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(510px);
+  }
+
+  .banner .slidere .iteme img {
     width: 100%;
     height: 100%;
     object-fit: cover;
